@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "arquero": "npm:arquero",
+    "zod": "npm:zod@4.0.0"
+  }
+}
