@@ -1,5 +1,14 @@
 import * as z from "zod";
 
+/* Edge function that perform preprocessing on the incoming data:
+  - Conversion of numeric strings to numbers
+  - Conversion of ISO date strings to date
+  - Detect and reject mixed-type arrays: either a date, a number of a string
+  - Enforces equal column lengths
+  
+  Returns: a validated dataset in JSON and its associated schema also in JSON
+ */
+
 Deno.serve(async (req) => {
 
   try {
