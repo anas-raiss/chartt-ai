@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "linkedom": "npm:linkedom",
+    "d3": "npm:d3@7.9.0"
+  }
+}
